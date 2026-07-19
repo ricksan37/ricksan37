@@ -12,7 +12,6 @@ I'm currently a **RevOps Analyst at PlayPlay** (SaaS, video, Paris) on a work-st
 ## Some things I've built
 - **Counterfeit banknote detection** — K-Means, Logistic Regression, KNN & Random Forest on 1,500 banknotes, all models ~99% accuracy, final model picked on a Youden-optimized threshold (not just "the one with the best number").
 - **Italy vs France — Anatomy of Two Labor Markets** — an end-to-end pipeline (Eurostat API → BigQuery → dbt → Looker Studio) comparing employment, unemployment and minimum-wage trends across both countries.
-- **FAO food security analysis** — an early signal-reading project, back when I was still figuring out which end of a dataset to hold.
 
 ## Where this is going
 Not stopping at Data Analyst — aiming at **Analytics Engineering**: the layer between "the data exists" and "the business can actually trust it." I write about the transition — and its less glamorous parts — on LinkedIn.
