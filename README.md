@@ -1,6 +1,6 @@
 # Hi there 👋
 
-I'm Riccardom about a year into turning myself from a salesperson into a data person.
+I'm Riccardo, about a year into turning myself from a salesperson into a data person.
 
 Before this, I sold (beautiful) clothes for years, managed retail stores, and sold payment solutions across the France 🇫🇷 → Italy 🇮🇹 border — yes, closing deals in two languages before breakfast. Now I do the same job, minus the small talk, plus SQL.
 
