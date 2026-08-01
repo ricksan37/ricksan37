@@ -7,7 +7,7 @@ Before this, I sold (beautiful) clothes for years, managed retail stores, and so
 I'm currently a **RevOps Analyst at PlayPlay** (SaaS, video, Paris) on a work-study program, while finishing a **Data Analyst / Analytics Engineering certification with OpenClassrooms**. In practice: dbt models in production during the day, ML notebooks and public APIs on the side.
 
 ## What I actually touch day to day
-`dbt` · `BigQuery` · `Snowflake` · `Salesforce` · `n8n` · `Tableau` · `SQL` · `Python`
+`dbt` · `Databricks` · `Duckdb` · `BigQuery` · `Snowflake` · `n8n` · `Tableau` · `SQL` · `Python`
 
 ## Some things I've built
 - **Counterfeit banknote detection** — K-Means, Logistic Regression, KNN & Random Forest on 1,500 banknotes, all models ~99% accuracy, final model picked on a Youden-optimized threshold (not just "the one with the best number").
