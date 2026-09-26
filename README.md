@@ -1,6 +1,6 @@
 # Riccardo Santini
 
-**Analytics Engineering · dbt · SQL · BigQuery** - Paris
+**Analytics Engineering** - Paris
 
 I spent eight years on the business side: managing retail stores, then selling
 payment solutions to Italian SMBs. Today I work on revenue data at PlayPlay
@@ -28,11 +28,5 @@ Three things it currently shows:
 dbt · SQL · BigQuery · DuckDB · Python · Salesforce · n8n · Tableau
 Currently exploring: Dagster · dlt
 
-## Elsewhere
-
-[LinkedIn](https://www.linkedin.com/in/santiniriccardo/) - I write about moving from sales to data, unglamorous
-parts included.
-[Substack](https://substack.com/@37ricksan) - longer-form, first-person field
-notes on the same transition.
 
 Trilingual FR 🇫🇷 / IT 🇮🇹 / EN 🇬🇧
