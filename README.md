@@ -1,17 +1,38 @@
-# Hi there 👋
+# Riccardo Santini
 
-I'm Riccardo, about a year into turning myself from a salesperson into a data person.
+**Analytics Engineering · dbt · SQL · BigQuery** - Paris
 
-Before this: selling (beautiful) clothes, managing retail stores, and closing payment-solutions deals across the France 🇫🇷 → Italy 🇮🇹 border, two languages, sometimes before breakfast. Now it's the same job, minus the small talk, plus SQL.
+I spent eight years on the business side: managing retail stores, then selling
+payment solutions to Italian SMBs. Today I work on revenue data at PlayPlay
+(SaaS, video), from Salesforce to dbt models on BigQuery.
+Same job, minus the small talk, plus SQL.
 
-I'm currently a **RevOps Analyst at PlayPlay** (SaaS, video, Paris) on a work-study program, finishing a **Data Analyst / Analytics Engineering certification** through OpenClassrooms. In practice: dbt models in production during the day, ML notebooks and public APIs on the side.
+## Featured project
 
-## What I actually touch day to day
+**[france_data_market](https://github.com/ricksan37/france_data_market)** -
+a weekly dbt + DuckDB pipeline tracking the French data job market (France
+Travail + SIRENE, local-LLM skill extraction, CI on GitHub Actions). Every
+modeling decision is backed by a measurement on real data, not a guess.
 
-`dbt` · `Databricks` · `DuckDB` · `BigQuery` · `Snowflake` · `n8n` · `Tableau` · `SQL` · `Python`
+**[Live report](https://ricksan37.github.io/france_data_market/)**
 
-## Where this is going
+Three things it currently shows:
+- 84% of July's offers had disappeared six weeks later
+- Only 31% of listings disclose a salary - 55% via intermediaries, 38% for
+  direct employers, 9% when the employer is masked
+- The salary median holds at 42.5-45k€ regardless of employer type, but
+  moves from 38.5k€ (no experience required) to 45k€ with experience asked
 
-Aiming past Data Analyst, at **Analytics Engineering**: the layer between "the data exists" and "the business can actually trust it." I write about the transition, including the less glamorous parts, on LinkedIn.
+## Stack
 
-Trilingual FR 🇫🇷 / IT 🇮🇹 / EN. Happy to argue about data modeling in any of the three.
+dbt · SQL · BigQuery · DuckDB · Python · Salesforce · n8n · Tableau
+Currently exploring: Dagster · dlt
+
+## Elsewhere
+
+[LinkedIn](https://www.linkedin.com/in/santiniriccardo/) - I write about moving from sales to data, unglamorous
+parts included.
+[Substack](https://substack.com/@37ricksan) - longer-form, first-person field
+notes on the same transition.
+
+Trilingual FR 🇫🇷 / IT 🇮🇹 / EN 🇬🇧
