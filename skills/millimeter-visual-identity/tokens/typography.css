@@ -1,0 +1,36 @@
+/* Millimeter Dark — type. Loud display, quiet body, mono for labels. */
+:root{
+  --font-display:"Archivo Black","Archivo",system-ui,sans-serif;
+  --font-body:"Inter",system-ui,sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,monospace;
+
+  /* Display / headings (Archivo Black, single black weight) */
+  --size-display:88px;
+  --size-display-sm:64px;
+  --size-h1:40px;
+  --size-h2:24px;
+  --size-h3:19px;
+  --track-display:-0.02em;
+  --leading-display:0.98;
+  --leading-heading:1.08;
+
+  /* Body (Inter) */
+  --size-body-lg:18px;
+  --size-body:16px;
+  --size-body-sm:15px;
+  --leading-body:1.65;
+  --weight-body:400;
+  --weight-lead:600;
+
+  /* Mono labels, kickers, figures */
+  --size-mono:11px;
+  --size-mono-sm:10px;
+  --size-code:13px;
+  --track-mono:0.14em;
+  --leading-mono:1.4;
+  --leading-code:1.6;
+
+  /* Stat figures (Archivo Black) */
+  --size-stat:56px;
+  --size-stat-sm:44px;
+}

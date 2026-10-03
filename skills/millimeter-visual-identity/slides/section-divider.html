@@ -1,0 +1,21 @@
+<!-- @dsCard group="Slides" viewport="1280x720" name="Section divider" subtitle="Void with the grid, one Slate panel floated on top" -->
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../_ds_bundle.js"></script>
+<style>html,body{margin:0}body{width:1280px;height:720px;overflow:hidden;background-color:var(--void);background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:24px 24px;color:var(--text-body);font-family:var(--font-body)}#root{width:1280px;height:720px}.slide{width:1280px;height:720px;padding:56px;box-sizing:border-box;display:flex;flex-direction:column}</style>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const { Kicker, Display } = window.MillimeterDarkDesignSystem_9b3f65;
+function Slide(){return(<div className="slide" style={{justifyContent:'center'}}>
+ <div style={{background:'var(--slate)',border:'1px solid var(--hairline)',borderRadius:20,padding:'52px 56px',display:'flex',flexDirection:'column',gap:16}}>
+  <Kicker index="04" tone="green">SECTION</Kicker>
+  <Display level="display" style={{fontSize:76}}>Données</Display>
+  <Display level="h2" style={{color:'var(--paper-muted)',fontSize:22}}>Six règles, aucune exception</Display>
+ </div>
+ <div style={{marginTop:'auto',display:'flex',justifyContent:'flex-end',alignItems:'flex-end'}}><Kicker tone="muted">03 / 07</Kicker></div>
+</div>)}
+ReactDOM.createRoot(document.getElementById('root')).render(<Slide/>);
+</script></body></html>

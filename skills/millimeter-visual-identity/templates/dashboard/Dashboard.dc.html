@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Dashboard" description="Millimeter Dark data dashboard: left rail, KPI row, two charts, source table." -->
+<helmet><script src="./ds-base.js"></script></helmet>
+<div style="min-height:100vh;box-sizing:border-box;padding:48px;display:flex;gap:32px;background-color:#0B0C0F;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:24px 24px;font-family:var(--font-body);color:#F2F3F5">
+<nav style="width:196px;flex:0 0 196px;display:flex;flex-direction:column;gap:10px">
+<div style="background:#1E2128;border:1px solid #4C8DFF;border-radius:12px;padding:12px 14px;min-height:84px;display:flex;flex-direction:column;justify-content:space-between"><span style="font-family:var(--font-display);font-size:20px;letter-spacing:-0.02em;color:#4C8DFF;line-height:1">01</span><span style="font-size:14px;font-weight:600">Overview</span></div>
+<div style="background:#15171C;border:1px solid #FFC24B;border-radius:12px;padding:12px 14px;min-height:84px;display:flex;flex-direction:column;justify-content:space-between"><span style="font-family:var(--font-display);font-size:20px;letter-spacing:-0.02em;color:#FFC24B;line-height:1">02</span><span style="font-size:14px;font-weight:600">Sources</span></div>
+<div style="background:#15171C;border:1px solid #FF6B5A;border-radius:12px;padding:12px 14px;min-height:84px;display:flex;flex-direction:column;justify-content:space-between"><span style="font-family:var(--font-display);font-size:20px;letter-spacing:-0.02em;color:#FF6B5A;line-height:1">03</span><span style="font-size:14px;font-weight:600">Pipeline</span></div>
+<div style="background:#15171C;border:1px solid #4ADE80;border-radius:12px;padding:12px 14px;min-height:84px;display:flex;flex-direction:column;justify-content:space-between"><span style="font-family:var(--font-display);font-size:20px;letter-spacing:-0.02em;color:#4ADE80;line-height:1">04</span><span style="font-size:14px;font-weight:600">Reports</span></div>
+<div style="margin-top:auto;background:#B57BFF;color:#0B0C0F;border-radius:12px;padding:14px 14px 16px;display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;opacity:0.72">Export</span><span style="font-size:15px;font-weight:600;line-height:1.25">Send weekly digest</span></div>
+</nav>
+<div style="width:1px;background:#2A2E37"></div>
+<main style="flex:1;min-width:0;display:flex;flex-direction:column;gap:24px">
+<header style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap">
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#4C8DFF">01 OVERVIEW</div>
+<h1 style="font-family:var(--font-display);font-size:40px;letter-spacing:-0.02em;line-height:1.08;margin:0">Ingest, at a glance</h1>
+</div>
+<div style="display:flex;gap:12px;align-items:center">
+<span style="background:#1E2128;border:1px solid #2A2E37;border-radius:999px;padding:6px 12px;font-family:var(--font-mono);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#9BA1AC">UTC</span>
+<span style="border:1px solid #3A404C;border-radius:999px;padding:12px 24px;font-size:15px;font-weight:600">Filters</span>
+<span style="display:inline-flex;align-items:center;gap:10px;background:#F2F3F5;color:#0B0C0F;border-radius:999px;padding:12px 24px;font-size:15px;font-weight:600">Share view <span style="font-family:var(--font-mono)">→</span></span>
+</div>
+</header>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px">
+<div style="background:#15171C;border:1px solid #2A2E37;border-radius:16px;padding:20px 22px">
+<div style="font-family:var(--font-display);font-size:clamp(30px,3.4vw,56px);letter-spacing:-0.02em;line-height:0.9;color:#4C8DFF">1.2M</div>
+<div style="display:flex;gap:8px;align-items:center;margin-top:10px"><span style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#9BA1AC">Events ingested</span><span style="font-family:var(--font-mono);font-size:10px;color:#4ADE80">+4.2%</span></div>
+</div>
+<div style="background:#15171C;border:1px solid #2A2E37;border-radius:16px;padding:20px 22px">
+<div style="font-family:var(--font-display);font-size:clamp(30px,3.4vw,56px);letter-spacing:-0.02em;line-height:0.9;color:#4ADE80">0.41s</div>
+<div style="display:flex;gap:8px;align-items:center;margin-top:10px"><span style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#9BA1AC">P95 latency</span><span style="font-family:var(--font-mono);font-size:10px;color:#4ADE80">-0.06s</span></div>
+</div>
+<div style="background:#15171C;border:1px solid #2A2E37;border-radius:16px;padding:20px 22px">
+<div style="font-family:var(--font-display);font-size:clamp(30px,3.4vw,56px);letter-spacing:-0.02em;line-height:0.9;color:#FFC24B">38%</div>
+<div style="display:flex;gap:8px;align-items:center;margin-top:10px"><span style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#9BA1AC">Stream share</span><span style="font-family:var(--font-mono);font-size:10px;color:#4ADE80">+1.8 pts</span></div>
+</div>
+<div style="background:#15171C;border:1px solid #2A2E37;border-radius:16px;padding:20px 22px">
+<div style="font-family:var(--font-display);font-size:clamp(30px,3.4vw,56px);letter-spacing:-0.02em;line-height:0.9;color:#FF6B5A">11</div>
+<div style="display:flex;gap:8px;align-items:center;margin-top:10px"><span style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#9BA1AC">Failed batches</span><span style="font-family:var(--font-mono);font-size:10px;color:#FF6B5A">+3</span></div>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:1.45fr 1fr;gap:16px">
+<x-import component-from-global-scope="MillimeterDarkDesignSystem_9b3f65.LineChart" labels="{{ chartLabels }}" series="{{ chartSeries }}" kicker="momentum" title="Ingest volume" height="{{ chartHeight }}" hint-size="100%,300px"></x-import>
+<x-import component-from-global-scope="MillimeterDarkDesignSystem_9b3f65.DonutChart" data="{{ donutData }}" kicker="share" title="Ingest mix" size="190" hint-size="100%,300px"></x-import>
+</div>
+<x-import component-from-global-scope="MillimeterDarkDesignSystem_9b3f65.DataTable" columns="{{ tableColumns }}" rows="{{ tableRows }}" highlightIndex="0" hint-size="100%,260px"></x-import>
+</main>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;chartCompare&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Data&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const compare = this.props.chartCompare ?? true;
+    const series = [{ name: "2026", values: [12, 15, 14, 22, 27, 31], tone: "blue" }];
+    if (compare) series.push({ name: "2025", values: [9, 11, 13, 12, 16, 18], tone: "amber" });
+    return {
+      chartLabels: ["W1", "W2", "W3", "W4", "W5", "W6"],
+      chartSeries: series,
+      chartHeight: 210,
+      donutData: [
+        { label: "Stream", value: 52 },
+        { label: "Batch", value: 31 },
+        { label: "Autres", value: 17 }
+      ],
+      tableColumns: [
+        { key: "src", label: "Source" },
+        { key: "kind", label: "Kind" },
+        { key: "vol", label: "Volume", numeric: true },
+        { key: "p95", label: "P95", numeric: true },
+        { key: "d", label: "Delta", numeric: true }
+      ],
+      tableRows: [
+        { src: "Events API", kind: "stream", vol: "1 284 902", p95: "0.41s", d: "+3.1%" },
+        { src: "Batch loader", kind: "batch", vol: "402 118", p95: "1.20s", d: "+0.4%" },
+        { src: "Webhooks", kind: "stream", vol: "98 044", p95: "0.32s", d: "-1.2%" },
+        { src: "CDC replica", kind: "stream", vol: "76 210", p95: "0.58s", d: "+8.4%" }
+      ]
+    };
+  }
+}
+
+</script>
+</body>
+</html>

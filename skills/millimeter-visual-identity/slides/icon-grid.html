@@ -1,0 +1,24 @@
+<!-- @dsCard group="Slides" viewport="1280x720" name="Icon grid" subtitle="Four concept cards, each in its locked hue" -->
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../_ds_bundle.js"></script>
+<style>html,body{margin:0}body{width:1280px;height:720px;overflow:hidden;background-color:var(--void);background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:24px 24px;color:var(--text-body);font-family:var(--font-body)}#root{width:1280px;height:720px}.slide{width:1280px;height:720px;padding:56px;box-sizing:border-box;display:flex;flex-direction:column}</style>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const { Kicker, Display, IconCard, Body } = window.MillimeterDarkDesignSystem_9b3f65;
+function Slide(){return(<div className="slide" style={{gap:30}}>
+ <div><Kicker index="06" tone="amber">PIPELINE</Kicker><Display level="h1" style={{fontSize:46,marginTop:16}}>Quatre étapes, une horloge</Display></div>
+ <div style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:20}}>
+  <IconCard name="database" label="Ingestion" size={40}/>
+  <IconCard name="pipeline" label="Orchestration" size={40}/>
+  <IconCard name="server" label="Entrepôt" size={40}/>
+  <IconCard name="chart" label="Restitution" size={40}/>
+ </div>
+ <Body style={{maxWidth:'70ch'}}>La couleur de chaque icône est fixe. Une base de données reste bleue d'un bout à l'autre du deck.</Body>
+ <div style={{marginTop:'auto'}}><Kicker tone="muted">05 / 07</Kicker></div>
+</div>)}
+ReactDOM.createRoot(document.getElementById('root')).render(<Slide/>);
+</script></body></html>

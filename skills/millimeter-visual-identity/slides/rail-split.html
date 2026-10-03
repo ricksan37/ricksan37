@@ -1,0 +1,23 @@
+<!-- @dsCard group="Slides" viewport="1280x720" name="Rail split (signature)" subtitle="Left rail plus a 50/50 content and media split" -->
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../_ds_bundle.js"></script>
+<style>html,body{margin:0}body{width:1280px;height:720px;overflow:hidden;background-color:var(--void);background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:24px 24px;color:var(--text-body);font-family:var(--font-body)}#root{width:1280px;height:720px}.slide{width:1280px;height:720px;padding:56px;box-sizing:border-box;display:flex;flex-direction:column}</style>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const { NavRail, Kicker, Display, Body, Button, ToneBlocks } = window.MillimeterDarkDesignSystem_9b3f65;
+function Slide(){return(<div className="slide" style={{flexDirection:'row',gap:40}}>
+ <NavRail items={[{label:'Palette'},{label:'Typographie'},{label:'Grille'},{label:'Données'}]} activeIndex={2} cta={{kicker:'brief',label:'Démarrer un projet'}}/>
+ <div style={{flex:1,display:'flex',flexDirection:'column',justifyContent:'center',gap:20,minWidth:0}}>
+  <Kicker index="03" tone="vermilion">GRILLE</Kicker>
+  <Display level="h1" style={{fontSize:52}}>La grille est la texture du système</Display>
+  <Body size="lg">Elle se construit en CSS, jamais en image. Entre 0.03 et 0.05 sur une page. Au-delà de 0.06 elle concurrence le contenu.</Body>
+  <div style={{display:'flex',gap:12,marginTop:8}}><Button variant="primary">Voir les specs</Button><Button variant="secondary" arrow={false}>Exemples</Button></div>
+ </div>
+ <div style={{flex:1,display:'flex',alignItems:'center',minWidth:0}}><ToneBlocks count={4} accentIndex={2} tone="vermilion" style={{width:'100%'}}/></div>
+</div>)}
+ReactDOM.createRoot(document.getElementById('root')).render(<Slide/>);
+</script></body></html>

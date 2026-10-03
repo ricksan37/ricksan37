@@ -1,0 +1,35 @@
+<!-- @dsCard group="Dashboard" viewport="1280x820" name="Ingest dashboard" subtitle="KPI row, two charts, rail navigation" -->
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Millimeter Dark · Ingest dashboard</title>
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>html,body{margin:0}body{background-color:var(--void);background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:24px 24px;color:var(--text-body);font-family:var(--font-body);min-height:100vh}</style>
+</head><body><div id="root"></div>
+<script type="text/babel" src="Shell.jsx"></script>
+<script type="text/babel" src="Overview.jsx"></script>
+<script type="text/babel" src="Sources.jsx"></script>
+<script type="text/babel" src="Pipeline.jsx"></script>
+<script type="text/babel" src="Reports.jsx"></script>
+<script type="text/babel">
+const { Button, Tag } = window.MillimeterDarkDesignSystem_9b3f65;
+const MM_VIEWS = [
+  { kicker: "OVERVIEW", title: "Ingest, at a glance", render: () => <Overview /> },
+  { kicker: "SOURCES", title: "Every source we read", render: () => <Sources /> },
+  { kicker: "PIPELINE", title: "Four stages, one clock", render: () => <Pipeline /> },
+  { kicker: "REPORTS", title: "What leaves the building", render: () => <Reports /> }
+];
+function App() {
+  const [i, setI] = React.useState(0);
+  const v = MM_VIEWS[i];
+  return (
+    <Shell index={i} onSelect={setI} kicker={v.kicker} title={v.title}
+      actions={<><Tag>UTC</Tag><Button variant="secondary" size="sm" arrow={false}>Filters</Button><Button variant="primary" size="sm">Share view</Button></>}>
+      {v.render()}
+    </Shell>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script></body></html>

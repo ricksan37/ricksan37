@@ -1,0 +1,55 @@
+/* Millimeter Dark — colour. Four-step dark ground, one light ink, four accents, one action colour.
+   Pure black (#000) and pure white (#fff) are banned. Void and Paper are the extremes. */
+:root{
+  /* Grounds and ink */
+  --void:#0B0C0F;
+  --slate:#15171C;
+  --slate-raised:#1E2128;
+  --hairline:#2A2E37;
+  --hairline-bright:#3A404C;
+  --paper:#F2F3F5;
+  --paper-muted:#9BA1AC;
+
+  /* Accents */
+  --signal-blue:#4C8DFF;
+  --amber:#FFC24B;
+  --vermilion:#FF6B5A;
+  --grid-green:#4ADE80;
+  --ultra-violet:#B57BFF;
+
+  /* Semantic surfaces */
+  --bg-page:var(--void);
+  --surface-card:var(--slate);
+  --surface-raised:var(--slate-raised);
+  --border-hairline:var(--hairline);
+  --border-strong:var(--hairline-bright);
+
+  /* Semantic text */
+  --text-body:var(--paper);
+  --text-muted:var(--paper-muted);
+  --text-on-accent:var(--void);
+  --text-kicker:var(--signal-blue);
+
+  /* Roles */
+  --accent-lead:var(--signal-blue);
+  --accent-close:var(--amber);
+  --accent-action:var(--ultra-violet);
+
+  /* Data series. Fixed order, never more than four. */
+  --data-1:var(--signal-blue);
+  --data-2:var(--amber);
+  --data-3:var(--vermilion);
+  --data-4:var(--grid-green);
+  --delta-pos:var(--grid-green);
+  --delta-neg:var(--vermilion);
+
+  /* Fixed icon hues. A concept keeps its colour across a deck. */
+  --icon-database:var(--signal-blue);
+  --icon-chart:var(--vermilion);
+  --icon-server:var(--grid-green);
+  --icon-code:var(--ultra-violet);
+  --icon-pipeline:var(--amber);
+  --icon-cloud:var(--signal-blue);
+  --icon-filter:var(--vermilion);
+  --icon-network:var(--grid-green);
+}

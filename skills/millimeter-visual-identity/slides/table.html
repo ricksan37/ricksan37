@@ -1,0 +1,22 @@
+<!-- @dsCard group="Slides" viewport="1280x720" name="Table slide" subtitle="Mono figures, one highlighted row" -->
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../_ds_bundle.js"></script>
+<style>html,body{margin:0}body{width:1280px;height:720px;overflow:hidden;background-color:var(--void);background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:24px 24px;color:var(--text-body);font-family:var(--font-body)}#root{width:1280px;height:720px}.slide{width:1280px;height:720px;padding:56px;box-sizing:border-box;display:flex;flex-direction:column}</style>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const { Kicker, Display, DataTable, Body } = window.MillimeterDarkDesignSystem_9b3f65;
+function Slide(){return(<div className="slide" style={{gap:26}}>
+ <div><Kicker index="08" tone="green">SOURCES</Kicker><Display level="h1" style={{fontSize:42,marginTop:14}}>Tout ce que nous lisons</Display></div>
+ <DataTable
+  columns={[{key:'src',label:'Source'},{key:'kind',label:'Type'},{key:'vol',label:'Volume',numeric:true},{key:'p95',label:'P95',numeric:true},{key:'d',label:'Delta',numeric:true}]}
+  rows={[{src:'Events API',kind:'stream',vol:'1 284 902',p95:'0.41s',d:'+3.1%'},{src:'Batch loader',kind:'batch',vol:'402 118',p95:'1.20s',d:'+0.4%'},{src:'Webhooks',kind:'stream',vol:'98 044',p95:'0.32s',d:'-1.2%'},{src:'CDC replica',kind:'stream',vol:'76 210',p95:'0.58s',d:'+8.4%'},{src:'Nightly export',kind:'batch',vol:'31 006',p95:'3.40s',d:'0.0%'}]}
+  highlightIndex={0} highlightTone="green"/>
+ <Body size="sm">Les colonnes numériques sont en mono, alignées à droite. La ligne mise en avant reçoit un filet accent à gauche et un pas de ton.</Body>
+ <div style={{marginTop:'auto'}}><Kicker tone="muted">07 / 07</Kicker></div>
+</div>)}
+ReactDOM.createRoot(document.getElementById('root')).render(<Slide/>);
+</script></body></html>

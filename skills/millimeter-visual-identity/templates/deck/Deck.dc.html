@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Deck" description="Millimeter Dark slide deck: cover, signature rail split, stat row, chart, icon grid, table." -->
+<helmet><script src="./ds-base.js"></script></helmet>
+<x-import component-from-global-scope="deck-stage" from="./deck-stage.js" width="1920" height="1080" hint-size="100%,100%" data-uneditable="">
+<section data-label="Cover" data-screen-label="01" style="width:1920px;height:1080px;box-sizing:border-box;padding:88px;display:flex;flex-direction:column;justify-content:space-between;background-color:#0B0C0F;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:40px 40px;font-family:var(--font-body);color:#F2F3F5">
+<div style="display:flex;justify-content:space-between;align-items:flex-start">
+<span style="font-family:var(--font-mono);font-size:18px;letter-spacing:0.14em;text-transform:uppercase;color:#9BA1AC">Système d'identité</span>
+<span style="font-family:var(--font-mono);font-size:18px;letter-spacing:0.14em;text-transform:uppercase;color:#9BA1AC">Septembre 2026 · Interne</span>
+</div>
+<div style="background:#15171C;border:1px solid #2A2E37;border-radius:20px;padding:72px 80px;max-width:1280px">
+<div style="font-family:var(--font-mono);font-size:20px;letter-spacing:0.14em;text-transform:uppercase;color:#FF6B5A">00 IDENTITÉ VISUELLE</div>
+<h1 style="font-family:var(--font-display);font-size:132px;letter-spacing:-0.02em;line-height:0.98;margin:28px 0 0">Millimeter<br>Dark</h1>
+<p style="font-size:30px;line-height:1.65;color:#9BA1AC;margin:32px 0 0;max-width:48ch">Un système dark-ground et grid-native. La profondeur vient du ton, jamais de l'ombre.</p>
+</div>
+<div style="display:flex;justify-content:space-between;align-items:flex-end">
+<span style="display:inline-flex;align-items:center;gap:14px;background:#F2F3F5;color:#0B0C0F;border-radius:999px;padding:18px 34px;font-size:22px;font-weight:600">Ouvrir le système <span style="font-family:var(--font-mono)">→</span></span>
+<span style="font-family:var(--font-mono);font-size:16px;letter-spacing:0.14em;color:#9BA1AC">01 / 06</span>
+</div>
+</section>
+<section data-label="Rail split" data-screen-label="02" style="width:1920px;height:1080px;box-sizing:border-box;padding:88px;display:flex;gap:64px;background-color:#0B0C0F;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:40px 40px;font-family:var(--font-body);color:#F2F3F5">
+<nav style="width:280px;flex:0 0 280px;display:flex;flex-direction:column;gap:16px">
+<div style="background:#15171C;border:1px solid #4C8DFF;border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;height:120px"><span style="font-family:var(--font-display);font-size:28px;color:#4C8DFF;letter-spacing:-0.02em">01</span><span style="font-size:20px;font-weight:600">Palette</span></div>
+<div style="background:#15171C;border:1px solid #FFC24B;border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;height:120px"><span style="font-family:var(--font-display);font-size:28px;color:#FFC24B;letter-spacing:-0.02em">02</span><span style="font-size:20px;font-weight:600">Typographie</span></div>
+<div style="background:#1E2128;border:1px solid #FF6B5A;border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;height:120px"><span style="font-family:var(--font-display);font-size:28px;color:#FF6B5A;letter-spacing:-0.02em">03</span><span style="font-size:20px;font-weight:600">Grille</span></div>
+<div style="background:#15171C;border:1px solid #4ADE80;border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;height:120px"><span style="font-family:var(--font-display);font-size:28px;color:#4ADE80;letter-spacing:-0.02em">04</span><span style="font-size:20px;font-weight:600">Données</span></div>
+<div style="margin-top:auto;background:#B57BFF;color:#0B0C0F;border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:10px"><span style="font-family:var(--font-mono);font-size:15px;letter-spacing:0.14em;text-transform:uppercase;opacity:0.72">Brief</span><span style="font-size:22px;font-weight:600;line-height:1.25">Démarrer un projet</span></div>
+</nav>
+<div style="flex:1;min-width:0;display:flex;flex-direction:column;justify-content:center;gap:32px">
+<div style="font-family:var(--font-mono);font-size:20px;letter-spacing:0.14em;text-transform:uppercase;color:#FF6B5A">03 GRILLE</div>
+<h2 style="font-family:var(--font-display);font-size:84px;letter-spacing:-0.02em;line-height:1.02;margin:0">La grille est la texture du système</h2>
+<p style="font-size:30px;line-height:1.65;color:#9BA1AC;margin:0;max-width:34ch">Elle se construit en CSS, jamais en image. Entre 0.03 et 0.05 sur une page. Au-delà de 0.06 elle concurrence le contenu.</p>
+</div>
+<div style="flex:1;min-width:0;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:20px;align-self:center;height:640px">
+<div style="background:#0B0C0F;border:1px solid #2A2E37;border-radius:14px"></div>
+<div style="background:#15171C;border:1px solid #2A2E37;border-radius:14px"></div>
+<div style="background:#1E2128;border:1px solid #FF6B5A;border-radius:14px"></div>
+<div style="background-color:#0B0C0F;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:20px 20px;border:1px solid #2A2E37;border-radius:14px"></div>
+</div>
+</section>
+<section data-label="Stat row" data-screen-label="03" style="width:1920px;height:1080px;box-sizing:border-box;padding:88px;display:flex;flex-direction:column;gap:56px;background-color:#0B0C0F;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:40px 40px;font-family:var(--font-body);color:#F2F3F5">
+<div>
+<div style="font-family:var(--font-mono);font-size:20px;letter-spacing:0.14em;text-transform:uppercase;color:#4C8DFF"></div>
+<h2 style="font-family:var(--font-display);font-size:84px;letter-spacing:-0.02em;line-height:1.02;margin:28px 0 0">Ce que la migration a changé</h2>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px">
+<div style="background:#15171C;border:1px solid #2A2E37;border-radius:20px;padding:44px">
+<div style="font-family:var(--font-display);font-size:104px;letter-spacing:-0.02em;line-height:0.9;color:#4C8DFF">38%</div>
+<div style="display:flex;gap:16px;align-items:center;margin-top:24px"><span style="font-family:var(--font-mono);font-size:17px;letter-spacing:0.14em;text-transform:uppercase;color:#9BA1AC">Part du stream</span><span style="font-family:var(--font-mono);font-size:17px;color:#4ADE80">+4.2 pts</span></div>
+</div>
+<div style="background:#15171C;border:1px solid #2A2E37;border-radius:20px;padding:44px">
+<div style="font-family:var(--font-display);font-size:104px;letter-spacing:-0.02em;line-height:0.9;color:#4ADE80">0.41s</div>
+<div style="display:flex;gap:16px;align-items:center;margin-top:24px"><span style="font-family:var(--font-mono);font-size:17px;letter-spacing:0.14em;text-transform:uppercase;color:#9BA1AC">Latence P95</span><span style="font-family:var(--font-mono);font-size:17px;color:#4ADE80">-0.06s</span></div>
+</div>
+<div style="background:#15171C;border:1px solid #2A2E37;border-radius:20px;padding:44px">
+<div style="font-family:var(--font-display);font-size:104px;letter-spacing:-0.02em;line-height:0.9;color:#FF6B5A">11</div>
+<div style="display:flex;gap:16px;align-items:center;margin-top:24px"><span style="font-family:var(--font-mono);font-size:17px;letter-spacing:0.14em;text-transform:uppercase;color:#9BA1AC">Batches en échec</span><span style="font-family:var(--font-mono);font-size:17px;color:#FF6B5A">+3</span></div>
+</div>
+</div>
+<p style="font-size:30px;line-height:1.65;color:#9BA1AC;margin:0;max-width:70ch">Le gain vient entièrement de l'API events. Le volume batch est resté plat sur la période.</p>
+</section>
+<section data-label="Chart" data-screen-label="04" style="width:1920px;height:1080px;box-sizing:border-box;padding:88px;display:flex;flex-direction:column;gap:48px;background-color:#0B0C0F;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:40px 40px;font-family:var(--font-body);color:#F2F3F5">
+<div style="display:flex;justify-content:space-between;align-items:flex-end;gap:64px">
+<div>
+<div style="font-family:var(--font-mono);font-size:20px;letter-spacing:0.14em;text-transform:uppercase;color:#4C8DFF"></div>
+<h2 style="font-family:var(--font-display);font-size:76px;letter-spacing:-0.02em;line-height:1.02;margin:28px 0 0">Le stream a dépassé le batch</h2>
+</div>
+<p style="font-size:24px;line-height:1.65;color:#9BA1AC;margin:0;max-width:30ch">Volumes hebdomadaires, en millions d'événements.</p>
+</div>
+<div style="flex:1;min-height:0">
+<x-import component-from-global-scope="MillimeterDarkDesignSystem_9b3f65.LineChart" labels="{{ chartLabels }}" series="{{ chartSeries }}" kicker="volume" title="Ingest par semaine" height="{{ chartHeight }}" hint-size="100%,520px" style="height:100%"></x-import>
+</div>
+</section>
+<section data-label="Icon grid" data-screen-label="05" style="width:1920px;height:1080px;box-sizing:border-box;padding:88px;display:flex;flex-direction:column;gap:56px;background-color:#0B0C0F;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:40px 40px;font-family:var(--font-body);color:#F2F3F5">
+<div>
+<div style="font-family:var(--font-mono);font-size:20px;letter-spacing:0.14em;text-transform:uppercase;color:#FFC24B"></div>
+<h2 style="font-family:var(--font-display);font-size:84px;letter-spacing:-0.02em;line-height:1.02;margin:28px 0 0">Quatre étapes, une horloge</h2>
+</div>
+<div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px">
+<x-import component-from-global-scope="MillimeterDarkDesignSystem_9b3f65.IconCard" name="database" label="Ingestion" size="64" hint-size="100%,280px"></x-import>
+<x-import component-from-global-scope="MillimeterDarkDesignSystem_9b3f65.IconCard" name="pipeline" label="Orchestration" size="64" hint-size="100%,280px"></x-import>
+<x-import component-from-global-scope="MillimeterDarkDesignSystem_9b3f65.IconCard" name="server" label="Entrepôt" size="64" hint-size="100%,280px"></x-import>
+<x-import component-from-global-scope="MillimeterDarkDesignSystem_9b3f65.IconCard" name="chart" label="Restitution" size="64" hint-size="100%,280px"></x-import>
+</div>
+<p style="font-size:30px;line-height:1.65;color:#9BA1AC;margin:0;max-width:70ch">La couleur de chaque icône est fixe. Une base de données reste bleue d'un bout à l'autre du deck.</p>
+</section>
+<section data-label="Table" data-screen-label="06" style="width:1920px;height:1080px;box-sizing:border-box;padding:88px;display:flex;flex-direction:column;gap:48px;background-color:#0B0C0F;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:40px 40px;font-family:var(--font-body);color:#F2F3F5">
+<div>
+<div style="font-family:var(--font-mono);font-size:20px;letter-spacing:0.14em;text-transform:uppercase;color:#4ADE80">08 SOURCES</div>
+<h2 style="font-family:var(--font-display);font-size:84px;letter-spacing:-0.02em;line-height:1.02;margin:28px 0 0">Tout ce que nous lisons</h2>
+</div>
+<x-import component-from-global-scope="MillimeterDarkDesignSystem_9b3f65.DataTable" columns="{{ tableColumns }}" rows="{{ tableRows }}" highlightIndex="{{ tableHighlight }}" highlightTone="green" hint-size="100%,420px"></x-import>
+<p style="font-size:24px;line-height:1.65;color:#9BA1AC;margin:0;max-width:70ch">Les colonnes numériques sont en mono, alignées à droite. La ligne mise en avant reçoit un filet accent à gauche et un pas de ton.</p>
+</section>
+</x-import>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;chartCompare&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Data&quot;},&quot;highlightFirstRow&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Data&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const compare = this.props.chartCompare ?? true;
+    const series = [{ name: "Stream", values: [12, 15, 14, 22, 27, 31], tone: "blue" }];
+    if (compare) series.push({ name: "Batch", values: [19, 20, 21, 20, 22, 21], tone: "amber" });
+    return {
+      chartLabels: ["S1", "S2", "S3", "S4", "S5", "S6"],
+      chartSeries: series,
+      chartHeight: 520,
+      tableColumns: [
+        { key: "src", label: "Source" },
+        { key: "kind", label: "Type" },
+        { key: "vol", label: "Volume", numeric: true },
+        { key: "p95", label: "P95", numeric: true },
+        { key: "d", label: "Delta", numeric: true }
+      ],
+      tableRows: [
+        { src: "Events API", kind: "stream", vol: "1 284 902", p95: "0.41s", d: "+3.1%" },
+        { src: "Batch loader", kind: "batch", vol: "402 118", p95: "1.20s", d: "+0.4%" },
+        { src: "Webhooks", kind: "stream", vol: "98 044", p95: "0.32s", d: "-1.2%" },
+        { src: "CDC replica", kind: "stream", vol: "76 210", p95: "0.58s", d: "+8.4%" },
+        { src: "Nightly export", kind: "batch", vol: "31 006", p95: "3.40s", d: "0.0%" }
+      ],
+      tableHighlight: this.props.highlightFirstRow ?? true ? 0 : -1
+    };
+  }
+}
+
+</script>
+</body>
+</html>

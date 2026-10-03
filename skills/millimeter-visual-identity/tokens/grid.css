@@ -1,0 +1,12 @@
+/* Millimeter Dark — the visible millimeter grid. Built in CSS, never a raster asset. */
+.mm-grid{
+  background-color:var(--void);
+  background-image:
+    linear-gradient(rgba(255,255,255,var(--grid-opacity)) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,var(--grid-opacity)) 1px,transparent 1px);
+  background-size:var(--grid-size) var(--grid-size);
+}
+.mm-grid-dense{--grid-opacity:0.06; /* @kind other */ --grid-size:12px}
+.mm-page{background-color:var(--void);color:var(--text-body);font-family:var(--font-body);font-size:var(--size-body);line-height:var(--leading-body);-webkit-font-smoothing:antialiased}
+a{color:var(--signal-blue);text-decoration:none}
+a:hover{color:var(--paper)}
