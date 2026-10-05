@@ -17,11 +17,13 @@ modeling decision is backed by a measurement on real data, not a guess.
 **[Live report](https://ricksan37.github.io/france_data_market/)**
 
 Three things it currently shows:
-- 84% of July's offers had disappeared six weeks later
-- Only 31% of listings disclose a salary - 55% via intermediaries, 38% for
-  direct employers, 9% when the employer is masked
-- The salary median holds at 42.5-45k€ regardless of employer type, but
-  moves from 38.5k€ (no experience required) to 45k€ with experience asked
+- Only 26% of listings disclose a salary: 45% via recruitment agencies and
+  consultancies, 38% for direct employers, 8% when the employer is masked
+- The salary median holds at 43-45k€ regardless of employer type (50k€ for
+  freelance missions), but moves from 40k€ (beginners accepted) to 45k€ when
+  experience is required
+- Nearly a fifth of listings are freelance missions from a single platform,
+  which rarely show a salary
 
 ## Stack
 
